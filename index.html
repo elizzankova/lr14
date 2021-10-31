@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<title>Софья</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Залесская Софья</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">О Софье</a>
+      <a href="#menu" class="w3-bar-item w3-button">Факты</a>
+      <a href="#contact" class="w3-bar-item w3-button">Фото</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="img/5.jpg" alt="SZ" width="1600" height="800">
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="img/6.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Софья Залесская</h1><br>
+      <h5 class="w3-center">с 23 января 2003 года</h5>
+      <p class="w3-large">Так как Соня Минская, то впервые мы встретились на линейке в честь 1го сентября. Я до сих пор помню тот её ангельский образ. Сарафан или платье и повязка на голове с бантиком. Вместе это все выглядело очень мило и невинно. А потом, когда объявили студента, набравшего самое большое количество баллов, я очень удивилась, что этот ангел на самом деле ещё и гений!</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">Вообще, Соня очень приятный и спокойный человек, который будет рад помочь, если вежливо спросить. Вероятнее всего она будет относиться к тебе также, как и ты к ней. Так что, ваши отношения в ваших руках!</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Факты</h1><br>
+      <h4>Родилась в Минске</h4>
+      <p class="w3-text-grey">А также окончила здесь Гиманзию №13</p><br>
+    
+      <h4>Есть старший брат Илья и двоюродная сестра Мария</h4>
+      <p class="w3-text-grey">Очень близкие отношения с обоими. Сказать честно, они слишком похожи с сестрой, иногда я даже путаю их, встречая на коридоре.</p><br>
+    
+      <h4>Есть любимый</h4>
+      <p class="w3-text-grey">Финик, как настоящий член семьи, очень любим нашей Соней</p><br>
+    
+      <h4>Любит людей</h4>
+      <p class="w3-text-grey">Это сильно проявляется в Сонином отношении к своим близким: она очень сильно ими дорожит</p><br>
+    
+      <h4>Любимые книги</h4>
+      <p class="w3-text-grey">Смотря на предыдущий пункт, можно догадаться, что это будут книги по психологии</p>    
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="img/4.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="w3-content slider" id="contact">
+
+    <img class="mySlides w3-animate-opacity photo" src="img/7.jpg">
+    <img class="mySlides w3-animate-opacity photo" src="img/1.jpg">
+    <img class="mySlides w3-animate-opacity photo" src="img/2.jpg">
+    <img class="mySlides w3-animate-opacity photo" src="img/3.jpg">
+    
+    <a class="w3-button w3-hover-dark-grey strela" style="position:absolute;top:45%;left:0;" onclick="plusDivs(-1)">❮</a>
+    <a class="w3-button w3-hover-dark-grey strela" style="position:absolute;top:45%;right:0;" onclick="plusDivs(+1)">❯</a>
+    </div>
+
+   <script> var slideIndex = 1;
+
+function plusDivs(n) {
+  slideIndex = slideIndex + n;
+  showDivs(slideIndex);
+}
+
+function showDivs(n) {
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+showDivs(1);
+</script>
+  
+<!-- End page content -->
+</div>
+
+
+</body>
+</html>
